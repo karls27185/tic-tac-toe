@@ -15,11 +15,17 @@
  *
  */
 
-package academy.devonline.tictactoe;
+package academy.devonline.tictactoe.component;
+
+import academy.devonline.tictactoe.model.GameTable;
 
 /**
  * @author Karl
  * @link https://babayan.keenetic.link/
  */
-public class GameTable {
+public class UserMove {
+
+    public void make(final GameTable gameTable) {
+
+    }
 }

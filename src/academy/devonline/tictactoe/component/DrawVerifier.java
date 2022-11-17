@@ -15,19 +15,17 @@
  *
  */
 
-package academy.devonline.tictactoe;
+package academy.devonline.tictactoe.component;
+
+import academy.devonline.tictactoe.model.GameTable;
 
 /**
  * @author Karl
  * @link https://babayan.keenetic.link/
  */
-public class WinnerVerifier {
+public class DrawVerifier {
 
-    public boolean isUserWin(final GameTable gameTable) {
-        return false;
-    }
-
-    public boolean isComputerWin(final GameTable gameTable) {
+    public boolean isDraw(final GameTable gameTable) {
         return false;
     }
 }

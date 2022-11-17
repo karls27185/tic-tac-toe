@@ -15,15 +15,21 @@
  *
  */
 
-package academy.devonline.tictactoe;
+package academy.devonline.tictactoe.component;
+
+import academy.devonline.tictactoe.model.GameTable;
 
 /**
  * @author Karl
  * @link https://babayan.keenetic.link/
  */
-public class DrawVerifier {
+public class DataPrinter {
 
-    public boolean isDraw(final GameTable gameTable) {
-        return false;
+    public void printMappingTable() {
+
+    }
+
+    public void printGameTable(final GameTable gameTable) {
+
     }
 }

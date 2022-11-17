@@ -17,6 +17,8 @@
 
 package academy.devonline.tictactoe;
 
+import academy.devonline.tictactoe.component.*;
+
 /**
  * @author Karl
  * @link https://babayan.keenetic.link/
