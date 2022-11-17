@@ -21,18 +21,13 @@ package academy.devonline.tictactoe;
  * @author Karl
  * @link https://babayan.keenetic.link/
  */
+public class DataPrinter {
 
-public final class Launcher { //final так как используется только для запуска игры
+    public void printMappingTable() {
 
-    public static void main(String[] args) {
-        final Game game = new Game(
-                new DataPrinter(),
-                new ComputerMove(),
-                new UserMove(),
-                new WinnerVerifier(),
-                new DrawVerifier()
-        );
-        game.play();
+    }
+
+    public void printGameTable(final GameTable gameTable) {
 
     }
 }

@@ -21,18 +21,13 @@ package academy.devonline.tictactoe;
  * @author Karl
  * @link https://babayan.keenetic.link/
  */
+public class WinnerVerifier {
 
-public final class Launcher { //final так как используется только для запуска игры
+    public boolean isUserWin(final GameTable gameTable) {
+        return false;
+    }
 
-    public static void main(String[] args) {
-        final Game game = new Game(
-                new DataPrinter(),
-                new ComputerMove(),
-                new UserMove(),
-                new WinnerVerifier(),
-                new DrawVerifier()
-        );
-        game.play();
-
+    public boolean isComputerWin(final GameTable gameTable) {
+        return false;
     }
 }
