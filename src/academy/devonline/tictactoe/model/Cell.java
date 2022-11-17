@@ -21,26 +21,22 @@ package academy.devonline.tictactoe.model;
  * @author Karl
  * @link https://babayan.keenetic.link/
  */
-public class GameTable {
+public class Cell {
 
-    private final char[][] table = {
-            {' ', ' ', ' '},
-            {' ', ' ', ' '},
-            {' ', ' ', ' '}
-    };
+    private final int row;//индекс сороки
 
-    //проверка пустая ли ячейка или нет
-    public boolean isEmpty(final Cell cell) {
-        return table[cell.getRow()][cell.getCol()] == ' ';
+    private final int col;//индекс столбца
+
+    public Cell(final int row, final int col) {
+        this.row = row;
+        this.col = col;
     }
 
-    //позволяет получить какой символ записан в ячейку
-    public char getSign(final Cell cell) {
-        return table[cell.getRow()][cell.getCol()];
+    public int getRow() {
+        return row;
     }
 
-    //позволяет обновить ячейку новым значением
-    public void setSign(final Cell cell, final char sign) {
-        table[cell.getRow()][cell.getCol()] = sign;
+    public int getCol() {
+        return col;
     }
 }
