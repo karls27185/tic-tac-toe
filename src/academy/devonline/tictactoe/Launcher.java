@@ -32,7 +32,7 @@ public final class Launcher { //final так как используется т�
                 new ComputerMove(),
                 new UserMove(),
                 new WinnerVerifier(),
-                new DrawVerifier()
+                new CellVerifier()
         );
         game.play();
 
