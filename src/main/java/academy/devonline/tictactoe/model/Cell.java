@@ -15,7 +15,7 @@
  *
  */
 
-package main.java.academy.devonline.tictactoe.model;
+package academy.devonline.tictactoe.model;
 
 /**
  * @author Karl

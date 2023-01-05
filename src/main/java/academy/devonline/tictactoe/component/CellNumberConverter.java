@@ -15,9 +15,9 @@
  *
  */
 
-package main.java.academy.devonline.tictactoe.component;
+package academy.devonline.tictactoe.component;
 
-import main.java.academy.devonline.tictactoe.model.Cell;
+import academy.devonline.tictactoe.model.Cell;
 
 /**
  * @author Karl

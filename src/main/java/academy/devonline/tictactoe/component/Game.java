@@ -15,10 +15,10 @@
  *
  */
 
-package main.java.academy.devonline.tictactoe.component;
+package academy.devonline.tictactoe.component;
 
 
-import main.java.academy.devonline.tictactoe.model.GameTable;
+import academy.devonline.tictactoe.model.GameTable;
 
 import java.util.Random;
 
