@@ -15,25 +15,29 @@
  *
  */
 
-package academy.devonline.tictactoe.component;
+package main.java.academy.devonline.tictactoe.component;
 
-import academy.devonline.tictactoe.model.Cell;
-import academy.devonline.tictactoe.model.GameTable;
+import main.java.academy.devonline.tictactoe.model.Cell;
+import main.java.academy.devonline.tictactoe.model.GameTable;
+
+import java.util.Random;
 
 /**
  * @author Karl
  * @link https://babayan.keenetic.link/
  */
-public class CellVerifier {
+public class ComputerMove {
 
-    public boolean allCellsFilled(final GameTable gameTable) {
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                if (gameTable.isEmpty(new Cell(i, j))) {
-                    return false;
-                }
+    public void make(final GameTable gameTable) {
+        final Random random = new Random();
+        while (true) {
+            final int row = random.nextInt(3);
+            final int col = random.nextInt(3);
+            final Cell randomCell = new Cell(row, col);
+            if (gameTable.isEmpty(randomCell)) {
+                gameTable.setSign(randomCell, '0');
+                return;
             }
         }
-        return true;
     }
 }

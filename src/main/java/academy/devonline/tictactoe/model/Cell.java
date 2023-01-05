@@ -15,17 +15,36 @@
  *
  */
 
-package academy.devonline.tictactoe.component;
-
-import academy.devonline.tictactoe.model.Cell;
+package main.java.academy.devonline.tictactoe.model;
 
 /**
  * @author Karl
  * @link https://babayan.keenetic.link/
  */
-public interface CellNumberConverter {
+public class Cell {
 
-    public Cell toCell(final char number);
+    private final int row;//индекс сороки
 
-    public char toNumber(final Cell cell);
+    private final int col;//индекс столбца
+
+    public Cell(final int row, final int col) {
+        this.row = row;
+        this.col = col;
+    }
+
+    public int getRow() {
+        return row;
+    }
+
+    public int getCol() {
+        return col;
+    }
+
+    @Override
+    public String toString() {
+        return "Cell{" +
+                "row=" + row +
+                ", col=" + col +
+                '}';
+    }
 }

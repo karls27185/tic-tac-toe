@@ -15,7 +15,7 @@
  *
  */
 
-package academy.devonline.tictactoe.model;
+package main.java.academy.devonline.tictactoe.model;
 
 import java.util.Arrays;
 

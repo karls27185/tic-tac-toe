@@ -15,10 +15,10 @@
  *
  */
 
-package academy.devonline.tictactoe.component.keypad;
+package main.java.academy.devonline.tictactoe.component.keypad;
 
-import academy.devonline.tictactoe.component.CellNumberConverter;
-import academy.devonline.tictactoe.model.Cell;
+import main.java.academy.devonline.tictactoe.component.CellNumberConverter;
+import main.java.academy.devonline.tictactoe.model.Cell;
 
 /**
  * @author Karl
