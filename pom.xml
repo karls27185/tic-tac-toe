@@ -77,9 +77,11 @@
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>${maven-surefire-plugin.version}</version>
                 </plugin>
+
                 <plugin>
                     <artifactId>maven-jar-plugin</artifactId>
                     <version>${maven-jar-plugin.version}</version>
+
                     <configuration>
                         <archive>
                             <manifest>
@@ -87,7 +89,9 @@
                             </manifest>
                         </archive>
                     </configuration>
+
                 </plugin>
+
                 <plugin>
                     <artifactId>maven-install-plugin</artifactId>
                     <version>${maven-install-plugin.version}</version>
