@@ -33,6 +33,7 @@
                 <include>NOTICE</include>
             </includes>
             <lineEnding>unix</lineEnding>
+            <filtered>true</filtered>
         </fileSet>
 
         <fileSet>
