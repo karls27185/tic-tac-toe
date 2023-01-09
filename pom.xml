@@ -122,6 +122,8 @@
                         <descriptor>src/assembly/distribution-windows.xml</descriptor>
                         <descriptor>src/assembly/distribution-unix.xml</descriptor>
                         <descriptor>src/assembly/distribution-windows-jre.xml</descriptor>
+                        <descriptor>src/assembly/distribution-linux-jre.xml</descriptor>
+                        <descriptor>src/assembly/distribution-mac-jre.xml</descriptor>
                     </descriptors>
                 </configuration>
                 <executions>
