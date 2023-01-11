@@ -55,7 +55,7 @@
         </fileSet>
 
         <fileSet>
-            <directory>.jre/windows-jre</directory>
+            <directory>.tmp/jre-windows</directory>
             <outputDirectory>jre</outputDirectory>
         </fileSet>
 

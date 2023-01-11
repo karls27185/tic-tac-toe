@@ -56,7 +56,7 @@
         </fileSet>
 
         <fileSet>
-            <directory>.jre/mac-jre</directory>
+            <directory>.tmp/jre-macos</directory>
             <outputDirectory>jre</outputDirectory>
 
             <includes>
@@ -68,7 +68,7 @@
         </fileSet>
 
         <fileSet>
-            <directory>.jre/mac-jre</directory>
+            <directory>.tmp/jre-macos</directory>
             <outputDirectory>jre</outputDirectory>
             <excludes>
                 <exclude>bin/java</exclude>
