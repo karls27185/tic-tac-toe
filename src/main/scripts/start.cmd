@@ -1,4 +1,4 @@
 @echo off
 
-%~dp0jre\bin\java -jar ${project.build.finalName}.jar
+%~dp0jre\bin\java -jar ${project.build.finalName}-release.jar
 pause
