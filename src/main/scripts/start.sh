@@ -12,6 +12,8 @@ if [ -x "$WHICH_JAVA" ]; then
   unset WHICH_JAVA
 fi
 # -------------------------------------------------------------------------------------------------------------------
+# Исправление проблемы с запуском из текущего каталога MacOS
+cd "$(dirname "$0")" || exit
 # Попытка использовать `java` из JRE, если существует `jre\bin\java`
 if [ -x "jre/bin/java" ]; then
   JAVA_CMD="jre/bin/java"
@@ -24,7 +26,6 @@ echo "\`java\` not defined! Install or configure JVM before using this script!" 
 echo "------------------------------------------------------------------------" >&2
 RETURN_CODE=1
 else
-cd "$(dirname "$0")" || exit
 # Запустить игру tic-tac-toe
 $JAVA_CMD -jar ${project.build.finalName}-release.jar
 RETURN_CODE=0
