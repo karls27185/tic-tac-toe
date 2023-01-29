@@ -19,6 +19,8 @@ package academy.devonline.tictactoe.model;
 
 import java.util.Arrays;
 
+import static academy.devonline.tictactoe.model.Sign.EMPTY;
+
 
 /**
  * @author Karl
@@ -26,24 +28,24 @@ import java.util.Arrays;
  */
 public class GameTable {
 
-    private final char[][] table = {
-            {' ', ' ', ' '},
-            {' ', ' ', ' '},
-            {' ', ' ', ' '}
+    private final Sign[][] table = {
+            {EMPTY, EMPTY, EMPTY},
+            {EMPTY, EMPTY, EMPTY},
+            {EMPTY, EMPTY, EMPTY}
     };
 
     //проверка пустая ли ячейка или нет
     public boolean isEmpty(final Cell cell) {
-        return table[cell.getRow()][cell.getCol()] == ' ';
+        return table[cell.getRow()][cell.getCol()] == EMPTY;
     }
 
     //позволяет получить какой символ записан в ячейку
-    public char getSign(final Cell cell) {
+    public Sign getSign(final Cell cell) {
         return table[cell.getRow()][cell.getCol()];
     }
 
     //позволяет обновить ячейку новым значением
-    public void setSign(final Cell cell, final char sign) {
+    public void setSign(final Cell cell, final Sign sign) {
         table[cell.getRow()][cell.getCol()] = sign;
     }
 
