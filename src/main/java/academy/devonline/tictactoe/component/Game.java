@@ -19,12 +19,14 @@ package academy.devonline.tictactoe.component;
 
 
 import academy.devonline.tictactoe.model.GameTable;
+import academy.devonline.tictactoe.model.Player;
 
-import java.util.Random;
+import static academy.devonline.tictactoe.model.Sign.O;
+import static academy.devonline.tictactoe.model.Sign.X;
 
 /**
  * @author Karl
- * @link https://babayan.keenetic.link/
+ * @link <a href="https://babayan.keenetic.link/">https://babayan.keenetic.link</a>
  */
 public class Game {
 
@@ -55,30 +57,22 @@ public class Game {
         dataPrinter.printMappingTable();
         final GameTable gameTable = new GameTable();
 
-        if (new Random().nextBoolean()) {
-            computerMove.make(gameTable);
-            dataPrinter.printGameTable(gameTable);
-        }
+//        if (new Random().nextBoolean()) {
+//            computerMove.make(gameTable);
+//            dataPrinter.printGameTable(gameTable);
+//        }
 
-        final Move[] moves = {userMove, computerMove};
+        final Player[] players = {new Player(X, userMove), new Player(O, computerMove)};
 
         while (true) {
-            boolean gameOver = false;
-            for (final Move move : moves) {
-                move.make(gameTable);
+            for (final Player player : players) {
+                player.makeMove(gameTable);
                 dataPrinter.printGameTable(gameTable);
-                if (move instanceof UserMove) {
-                    if (winnerVerifier.isUserWin(gameTable)) {
-                        System.out.println("YOU WIN!");
-                        printGameOver();
-                        return;
-                    }
-                } else {
-                    if (winnerVerifier.isComputerWin(gameTable)) {
-                        System.out.println("COMPUTER WIN!");
-                        printGameOver();
-                        return;
-                    }
+
+                if (winnerVerifier.isWinner(gameTable, player)) {
+                    System.out.println(player + " WIN!");
+                    printGameOver();
+                    return;
                 }
                 if (cellVerifier.allCellsFilled(gameTable)) {
                     System.out.println("Sorry, DRAW!");

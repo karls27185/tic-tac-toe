@@ -19,30 +19,28 @@ package academy.devonline.tictactoe.component;
 
 import academy.devonline.tictactoe.model.Cell;
 import academy.devonline.tictactoe.model.GameTable;
+import academy.devonline.tictactoe.model.Player;
 import academy.devonline.tictactoe.model.Sign;
-
-import static academy.devonline.tictactoe.model.Sign.O;
-import static academy.devonline.tictactoe.model.Sign.X;
 
 /**
  * @author Karl
- * @link https://babayan.keenetic.link/
+ * @link <a href="https://babayan.keenetic.link/">https://babayan.keenetic.link</a>
  */
 public class WinnerVerifier {
 
-    public boolean isUserWin(final GameTable gameTable) {
-        return isWinner(gameTable, X);
-    }
+//    public boolean isUserWin(final GameTable gameTable) {
+//        return isWinner(gameTable, X);
+//    }
+//
+//    public boolean isComputerWin(final GameTable gameTable) {
+//        return isWinner(gameTable, O);
+//    }
 
-    public boolean isComputerWin(final GameTable gameTable) {
-        return isWinner(gameTable, O);
-    }
-
-    private boolean isWinner(final GameTable gameTable, final Sign sign) {
-        return isWinnerByRows(gameTable, sign) ||
-                isWinnerByCols(gameTable, sign) ||
-                isWinnerByMainDiagonal(gameTable, sign) ||
-                isWinnerBySecondaryDiagonal(gameTable, sign);
+    public boolean isWinner(final GameTable gameTable, final Player player) {
+        return isWinnerByRows(gameTable, player.getSing()) ||
+                isWinnerByCols(gameTable, player.getSing()) ||
+                isWinnerByMainDiagonal(gameTable, player.getSing()) ||
+                isWinnerBySecondaryDiagonal(gameTable, player.getSing());
     }
 
     private boolean isWinnerByRows(final GameTable gameTable, final Sign sign) {

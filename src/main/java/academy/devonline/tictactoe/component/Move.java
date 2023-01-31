@@ -18,11 +18,12 @@
 package academy.devonline.tictactoe.component;
 
 import academy.devonline.tictactoe.model.GameTable;
+import academy.devonline.tictactoe.model.Sign;
 
 /**
  * @author Karl
  * @link https://babayan.keenetic.link/
  */
 public interface Move {
-    void make(GameTable gameTable);
+    void make(GameTable gameTable, Sign sign);
 }

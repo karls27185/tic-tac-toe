@@ -30,14 +30,14 @@ import java.util.Random;
 public class ComputerMove implements Move {
 
     @Override
-    public void make(final GameTable gameTable) {
+    public void make(final GameTable gameTable, final Sign sign) {
         final Random random = new Random();
         while (true) {
             final int row = random.nextInt(3);
             final int col = random.nextInt(3);
             final Cell randomCell = new Cell(row, col);
             if (gameTable.isEmpty(randomCell)) {
-                gameTable.setSign(randomCell, Sign.O);
+                gameTable.setSign(randomCell, sign);
                 return;
             }
         }
