@@ -15,22 +15,13 @@
  *
  */
 
-package academy.devonline.tictactoe;
-
-import academy.devonline.tictactoe.component.Game;
-import academy.devonline.tictactoe.component.GameFactory;
+package academy.devonline.tictactoe.model;
 
 /**
  * @author Karl
- * @link https://babayan.keenetic.link/
+ * @link <a href="https://babayan.keenetic.link/">https://babayan.keenetic.link</a>
  */
-
-public final class Launcher { //final так как используется только для запуска игры
-
-    public static void main(String[] args) {
-        final GameFactory gameFactory = new GameFactory(args);
-        final Game game = gameFactory.create();
-        game.play();
-
-    }
+public enum PlayerType {
+    USER,
+    COMPUTER
 }
