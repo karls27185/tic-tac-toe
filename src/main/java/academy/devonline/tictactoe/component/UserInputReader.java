@@ -17,19 +17,12 @@
 
 package academy.devonline.tictactoe.component;
 
-import academy.devonline.tictactoe.model.GameTable;
+import academy.devonline.tictactoe.model.Cell;
 
 /**
  * @author Karl
  * @link <a href="https://babayan.keenetic.link/">https://babayan.keenetic.link</a>
  */
-public interface DataPrinter {
-    void printInfoMessage(String message);
-
-    void printErrorMessage(String message);
-
-    void printMappingTable();
-
-    void printGameTable(GameTable gameTable);
-
+public interface UserInputReader {
+    Cell getUserInput();
 }
