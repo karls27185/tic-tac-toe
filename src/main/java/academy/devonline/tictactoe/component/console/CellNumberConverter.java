@@ -15,9 +15,9 @@
  *
  */
 
-package academy.devonline.tictactoe.component;
+package academy.devonline.tictactoe.component.console;
 
-import academy.devonline.tictactoe.model.Cell;
+import academy.devonline.tictactoe.model.game.Cell;
 
 /**
  * @author Karl

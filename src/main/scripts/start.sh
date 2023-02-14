@@ -27,11 +27,11 @@ echo "------------------------------------------------------------------------" 
 RETURN_CODE=1
 else
 # Запустить игру tic-tac-toe
-$JAVA_CMD -jar ${project.build.finalName}-release.jar
+$JAVA_CMD -jar ${project.build.finalName}-release.jar "$@"
 RETURN_CODE=0
 fi
 # ----------------------------------------------------------------------------------------------------------------------
-echo "Press enter to continue . . ."
-read -r test
+#echo "Press enter to continue . . ."
+#read -r test
 # ----------------------------------------------------------------------------------------------------------------------
 exit $RETURN_CODE

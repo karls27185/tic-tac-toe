@@ -15,13 +15,13 @@
  *
  */
 
-package academy.devonline.tictactoe.model;
+package academy.devonline.tictactoe.model.config;
 
 /**
  * @author Karl
  * @link <a href="https://babayan.keenetic.link/">https://babayan.keenetic.link</a>
  */
-public enum PlayerType {
-    USER,
-    COMPUTER
+public enum UserInterface {
+    GUI,
+    CONSOLE
 }

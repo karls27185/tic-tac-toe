@@ -15,13 +15,36 @@
  *
  */
 
-package academy.devonline.tictactoe.model;
+package academy.devonline.tictactoe.model.game;
 
 /**
  * @author Karl
- * @link <a href="https://babayan.keenetic.link/">https://babayan.keenetic.link</a>
+ * @link https://babayan.keenetic.link/
  */
-public enum UserInterface {
-    GUI,
-    CONSOLE
+public class Cell {
+
+    private final int row;//индекс сороки
+
+    private final int col;//индекс столбца
+
+    public Cell(final int row, final int col) {
+        this.row = row;
+        this.col = col;
+    }
+
+    public int getRow() {
+        return row;
+    }
+
+    public int getCol() {
+        return col;
+    }
+
+    @Override
+    public String toString() {
+        return "Cell{" +
+                "row=" + row +
+                ", col=" + col +
+                '}';
+    }
 }
