@@ -52,12 +52,12 @@ public class GameFactory {
     }
 
     public Game create() {
-        final GameWindow gameWindow = new GameWindow();
 //        final CellNumberConverter cellNumberConverter = new DesktopNumericKeypadCellNumberConverter();
         final DataPrinter dataPrinter; // new ConsoleDataPrinter(cellNumberConverter);
         final UserInputReader userInputReader;// new ConsoleUserInputReader(cellNumberConverter, dataPrinter);
         final GameOverHandler gameOverHandler;
         if (userInterface == GUI) {
+            final GameWindow gameWindow = new GameWindow();
             dataPrinter = gameWindow;
             userInputReader = gameWindow;
             gameOverHandler = gameWindow;
