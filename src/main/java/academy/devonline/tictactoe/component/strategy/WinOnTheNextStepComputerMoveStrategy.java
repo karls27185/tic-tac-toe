@@ -23,13 +23,14 @@ import academy.devonline.tictactoe.model.game.Sign;
  * @author Karl
  * @link <a href="https://babayan.keenetic.link/">https://babayan.keenetic.link</a>
  */
-public class PreventUserWinComputerMoveStrategy extends AbstractComputerMoveStrategy {
-    public PreventUserWinComputerMoveStrategy() {
-        super(1);
+public class WinOnTheNextStepComputerMoveStrategy extends AbstractComputerMoveStrategy {
+
+    public WinOnTheNextStepComputerMoveStrategy() {
+        super(2);
     }
 
     @Override
     protected Sign getFindSign(final Sign moveSign) {
-        return moveSign.oppositeSign();
+        return moveSign;
     }
 }
