@@ -6,10 +6,10 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>babayan.keenetic.link</groupId>
     <artifactId>tic-tac-toe</artifactId>
-    <version>3.0-SNAPSHOT</version>
+    <version>3.0</version>
 
     <name>Tic Tac Toe</name>
-    <description>The Tic-Tac-Toe simple game using console mode</description>
+    <description>The Tic-Tac-Toe simple game using console and GUI mode</description>
     <url>https://web.babayan.keenetic.link/</url>
     <organization>
         <name>Babayan Karlen</name>
