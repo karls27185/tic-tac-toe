@@ -46,13 +46,13 @@ public class BuildJar {
             Files.createDirectories(classesDir);
         }
 
-        // javac -sourcepath src/ -d out/classes src/academy/devonline/gomoku/Launcher.java
+        // javac -sourcepath src/ -d out/classes src/academy/devonline/tictactoe/Launcher.java
 //        compileJavaSourceFiles();
-        runCmd("javac -sourcepath src/ -d out/classes src/academy/devonline/gomoku/Launcher.java");
+        runCmd("javac -sourcepath src/ -d out/classes src/academy/devonline/tictactoe/Launcher.java");
 
-        // jar cfe out/gomoku.jar academy.devonline.gomoku.Launcher -C out/classes .
+        // jar cfe out/tic-tac-toe.jar academy.devonline.tictactoe.Launcher -C out/classes .
 //        createJarFile();
-        runCmd("jar cfe out/gomoku.jar academy.devonline.gomoku.Launcher -C out/classes .");
+        runCmd("jar cfe out/tic-tac-toe.jar academy.devonline.tictactoe.Launcher -C out/classes .");
 
         // del /q /f out\classes
         // rmdir /q /s out\classes
@@ -82,10 +82,10 @@ public class BuildJar {
 //        // Create manifest
 //        final Manifest manifest = new Manifest();
 //        manifest.getMainAttributes().put(Attributes.Name.MANIFEST_VERSION, "1.0");
-//        manifest.getMainAttributes().put(Attributes.Name.MAIN_CLASS, "academy.devonline.gomoku.Launcher");
+//        manifest.getMainAttributes().put(Attributes.Name.MAIN_CLASS, "academy.devonline.tictactoe.Launcher");
 //
 //        // Create jar file out stream
-//        try (FileOutputStream stream = new FileOutputStream("out/gomoku.jar")) {
+//        try (FileOutputStream stream = new FileOutputStream("out/tic-tac-toe.jar")) {
 //            try (JarOutputStream out = new JarOutputStream(stream, manifest)) {
 //                // Get absolute paths to class files
 //                final List<Path> files = new ArrayList<>();
