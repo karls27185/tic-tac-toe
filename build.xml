@@ -15,7 +15,7 @@
   ~
   -->
 
-<project name="tic-tac-toe project" basedir="." default="build">
+<project name="gomoku project" basedir="." default="build">
 
     <target name="clean">
         <delete dir="out"/>
@@ -27,9 +27,9 @@
     </target>
 
     <target name="jar" depends="compile">
-        <jar destfile="out/tic-tac-toe.jar" basedir="out\classes">
+        <jar destfile="out/gomoku.jar" basedir="out\classes">
             <manifest>
-                <attribute name="Main-Class" value="academy.devonline.tictactoe.Launcher"/>
+                <attribute name="Main-Class" value="academy.devonline.gomoku.Launcher"/>
             </manifest>
         </jar>
     </target>
@@ -42,13 +42,13 @@
     <!--        &lt;!&ndash; mkdir out\classes &ndash;&gt;-->
     <!--        <mkdir dir="out\classes"/>-->
 
-    <!--        &lt;!&ndash; javac -sourcepath src/ -d out/classes src/academy/devonline/tictactoe/Launcher.java &ndash;&gt;-->
+    <!--        &lt;!&ndash; javac -sourcepath src/ -d out/classes src/academy/devonline/gomoku/Launcher.java &ndash;&gt;-->
     <!--        <javac srcdir="src" destdir="out\classes"/>-->
 
-    <!--        &lt;!&ndash; jar cfe out/tic-tac-toe.jar academy.devonline.tictactoe.Launcher -C out/classes . &ndash;&gt;-->
-    <!--        <jar destfile="out/tic-tac-toe.jar" basedir="out\classes">-->
+    <!--        &lt;!&ndash; jar cfe out/gomoku.jar academy.devonline.gomoku.Launcher -C out/classes . &ndash;&gt;-->
+    <!--        <jar destfile="out/gomoku.jar" basedir="out\classes">-->
     <!--            <manifest>-->
-    <!--                <attribute name="Main-Class" value="academy.devonline.tictactoe.Launcher"/>-->
+    <!--                <attribute name="Main-Class" value="academy.devonline.gomoku.Launcher"/>-->
     <!--            </manifest>-->
     <!--        </jar>-->
     <!--        &lt;!&ndash;-->

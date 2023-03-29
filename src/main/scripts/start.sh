@@ -26,7 +26,7 @@ echo "\`java\` not defined! Install or configure JVM before using this script!" 
 echo "------------------------------------------------------------------------" >&2
 RETURN_CODE=1
 else
-# Запустить игру tic-tac-toe
+# Запустить игру gomoku
 $JAVA_CMD -jar ${project.build.finalName}-release.jar "$@"
 RETURN_CODE=0
 fi
